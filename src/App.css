@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+ body{
+    margin: 0px;
+    padding: 0px;
+     box-sizing: border-box;
+     /* font-family: "IBM Plex Sans", sans-serif; */
+     font-family: "Fira Sans", sans-serif;
+     cursor: pointer;
+ }
+.navSection{
+     
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E3655B;
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+    font-size: larger;
+}
+.sideBarSection{
+    border: 1px solid;
+     width: 100%;
+     max-width: 15%;
+     height: 88vh;
+     background-color: #2D3142;
+}
+.sideBarSection ul li {
+list-style: none;
+ margin-bottom: 25px;
+ font-weight: 500;
+ font-size: medium;
+cursor: pointer;
+  color: rgb(248, 248, 248);
+}
+.colectionSection{
+     display: flex;
+
+}
+/* //log inform */
+.loginSection{
+   
+    width: 100%;
+     display: flex;
+      flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.authform{
+    width: 100%;
+    max-width: 50%;
+   
+     margin-top: -200px;
+     display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      border: 2px solid rgb(171, 171, 171);
+      border-radius: 10px;
+      box-shadow: inset;
+    
+}
+ .authform input{
+     width: 100%;
+      max-width: 55%;
+       height: 1.6rem;
+ }
+
+ .authform lable{
+ width: 100%;
+ max-width: 55%;
+  font-weight: 500;
+ }
+  /* register form */
+.registerSection{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/* firmsection */
+
+.firmSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+ .tableform{
+    border: 1px solid ;
+     border-radius: 10px;
+    width: 100%;
+    max-width: 50%;
+   
+     /* margin-top: -50px; */
+     display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      border: 2px solid rgb(171, 171, 171);
+      border-radius: 10px;
+      box-shadow: inset;
+      padding: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0.2, 0.1); /* Adds a subtle shadow */
+      
+
+ }
+ .tableform input{
+    width: 100%;
+    max-width: 60%;
+    height: 30px;
+    margin-bottom: 2px;
+       
+    }
+  .tableform   label{
+        width: 100%;
+        max-width: 55%;
+         font-weight: 600;
+         padding: 5px;
+         
+   }
+
+    /* chechboxs */
+.check-inp{
+
+   width:  100%;
+   max-width: 55%;
+   display: flex;
+   gap: 10px;
+}
+.check-inp label{
+ width: 20%;
+}
+.innercontainer{
+  display: flex;
+    width: 100%;
+ 
+    
+}
+.checkboxcontainer{
+  width: 100%;
+  max-width: 50%;
+   /* border: 1px solid; */
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.checkboxcontainer label{
+
+ /* width: 100%; */
+ font-size:small;
+   
+}
+.regboxcontainer label{
+
+  width: 100%;
+  font-size:10px;
+    
+ }
+
+ /* producttable */
+ 
+.produt-table{
+  border: 2px solid black;
+   width: 80vw;
+   
+   border-collapse: collapse;
+   margin-top: 50px;
+}
+.produt-table th,
+.produt-table td {
+border: 1px solid rgb(14, 13, 13);
+padding: 10px;
+
+}
+.produt-table th{
+ text-align: left;
+ background-color: rgb(232, 232, 232);
+}
+ /* not found */
+
+
+ .errorsection{
+  width: 100%;
+   height: 100vh;
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+ }
+  
+ h3{
+  color:#E3655B;
+ }
+ .btnSubmit button{
+  background-color: #2D3142;
+   border-radius: 5px;
+   color: white;
+   padding: 8px;
+    margin-bottom: 10px;
+ }
