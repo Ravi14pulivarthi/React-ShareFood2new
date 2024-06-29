@@ -49,14 +49,7 @@ const firmName=localStorage.getItem('firmName')
  }
 
 
-function showlogin(){
-setlogin(true)
- setregister(false)
- setfirm(false)
- setallproducts(false)
- setwelcome(false)
- setshowproducts(false)
-}
+
 
  const  showRegister=()=>{
    setregister(true)
@@ -67,8 +60,17 @@ setlogin(true)
    setshowproducts(false)
 
   }
+
+  const showlogin=()=>{
+    setlogin(true)
+     setregister(false)
+     setfirm(false)
+     setallproducts(false)
+     setwelcome(false)
+     setshowproducts(false)
+    }
   
-function showFirm(){
+const showFirm=()=>{
   if(showlogout){ 
     setfirm(true)
     setlogin(false)
@@ -106,7 +108,8 @@ const showWelcomepage=()=>{
 }
 
 const showproductss=()=>{
-  if(showlogout){  setfirm(true)
+  if(showlogout){ 
+    setfirm(true)
   setwelcome(false)
   setallproducts(false)
   setlogin(false)

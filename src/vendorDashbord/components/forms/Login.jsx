@@ -30,6 +30,7 @@ alert("Vendor Login sussfully")
   setpassword("")
   localStorage.setItem("loginToken",data.token)
   showWelcomepage()
+  
  }
  
 // firmid api

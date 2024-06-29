@@ -35,7 +35,7 @@ try{
    })
     if( resonce.ok){
        setproducts(products.filter(product=> product._id !== productId))
-  // confirm("are you sure want to delete ?")
+  confirm("are you sure want to delete ?")
    alert('Producted successfully')
       }
 }
@@ -63,13 +63,15 @@ try{
 
                <tbody>
                 {products.map((item)=>{
-                 
+            const images=`${API_URL}/uploads/${item.image}`
+             console.log(images)
                  return(
                   <>
                   <tr key={item._id}>
                       <td>{item.productName}</td>
                       <td>{item.price}</td>
                       <td>{item.image && (<img style={{width:"50px"}} src={`${API_URL}/uploads/${item.image}`} alt={item.productName}/>)}</td>
+                  
                    <td><button onClick={()=>deleteproductbyid(item._id)}>Delete</button></td>
                   </tr>
                   </>
