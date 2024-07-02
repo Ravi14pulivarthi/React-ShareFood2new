@@ -32,12 +32,27 @@ function AddFirm() {
    }
   
   
+
+
+   // image2
+ const  imagehandler2=(file1)=>{
+   return new Promise((resolve, reject) => {
+      const filereader=new FileReader();
+      filereader.readAsDataURL(file1)
+      filereader.onload=()=>{
+       resolve(filereader.result)  };
+      filereader.onerror=(error)=>{reject(error)}
+   })
+   
+ }
 // image
 
-const  handelimageuplode=(event)=>{
+const  handelimageuplode=async(event)=>{
  const selectedimage=event.target.files[0]
-  setfile(selectedimage)
+  const newimage=await imagehandler2(selectedimage)
+ setfile(newimage)
 }
+
 
 
 
